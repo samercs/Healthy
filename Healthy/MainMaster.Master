@@ -4,10 +4,15 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Interactive and Digital Mother Child Health Handbook (idMCHH)
+</title>
 
     <script src="Scripts/jquery-2.2.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!--[if IE 7]>
+	    <link rel="stylesheet" href="css/ie7.css" type="text/css"/>
+	<![endif]-->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,73 +21,70 @@
 <body>
     <form id="form1" runat="server" class="form-horizontal">
 
-        <header>
-            <div class="container">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">
-                                <img src="images/logo.png" />
-                            </a>
-                        </div>
-
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li id="HomeCon"  runat="server">
-                                    
-                                    <a href="Default.aspx">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li id="RegisterCon" runat="server">
-                                    <asp:HyperLink ID="linkProfileReg" runat="server">Personal Profile</asp:HyperLink>
-                                </li>
-                                <li>
-                                    <a href="#">Healt Education</a>
-                                </li>
-                                <li>
-                                    <a href="#">Child Development</a>
-                                </li>
-                                <li>
-                                    <a href="#">Periodic Checkup</a>
-                                </li>
-                            </ul>
-
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                        <asp:Label ID="lblUserName" runat="server" Text="Label"></asp:Label> <span class="caret"></span></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <asp:MultiView ID="MultiView1" runat="server">
-                                            <asp:View ID="View1" runat="server">
-                                                <li><a href="Register.aspx">Register</a></li>
-                                                <li><a href="Login.aspx">Sign In</a></li>
-                                            </asp:View>
-                                            <asp:View ID="View2" runat="server">
-                                                <li><a href="Profile.aspx">Profile</a></li>
-                                                <li><a href="ChangePassword.aspx">Change Password</a></li>
-                                                <li><a href="Logout.aspx">Log Out</a></li>
-                                            </asp:View>
-                                        </asp:MultiView>
-                                        
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
+       <div id="header">
+		<div>
+			<div>
+				<span>A healthy heart means a healthy life...</span>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<span class="tagline">Experience life to the fullest.</span>
+			</div>
+			<ul>
+				<li id="HomeCon" runat="server">
+					<a href="Default.aspx">home</a>
+				</li>
+				<li id="RegisterCon" runat="server">
+					<asp:HyperLink ID="linkProfileReg" runat="server">HyperLink</asp:HyperLink>
+				</li>
+                <li id="LoginCon" runat="server">
+					<asp:HyperLink NavigateUrl="Login.aspx" ID="loginLink" runat="server">Log in</asp:HyperLink>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
 
 
-        <div class="container">
+        <div id="body">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+        
+        <div id="footer">
+		<div>
+			<p>
+				Copyright &copy; <a href="index.html">Cardio Center</a>
+			</p>
+			<ul>
+				<li>
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="about.html">about</a>
+				</li>
+				<li>
+					<a href="doctors.html">our doctors</a>
+				</li>
+				<li>
+					<a href="services.html">services</a>
+				</li>
+				<li>
+					<a href="forms.html">forms</a>
+				</li>
+				<li>
+					<a href="contact.html">contact</a>
+				</li>
+				<li>
+					<a href="blog.html">blog</a>
+				</li>
+			</ul>
+			<div>
+				<span>stay connected:</span>
+				<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+				<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+				<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
+			</div>
+		</div>
+	</div>
     </form>
 </body>
 </html>

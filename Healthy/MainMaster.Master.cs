@@ -20,25 +20,27 @@ namespace Healthy
                 {
                     linkProfileReg.Text = "Register";
                     linkProfileReg.NavigateUrl = "Register.aspx";
-                    lblUserName.Text = "Welcome ";
-                    MultiView1.ActiveViewIndex = 0;
+                    
                 }
                 else
                 {
                     Users u = t.GetUser(Session);
                     linkProfileReg.Text = "Personal Profile";
                     linkProfileReg.NavigateUrl = "Profile.aspx";
-                    lblUserName.Text = "Welcome " + u.UserName;
-                    MultiView1.ActiveViewIndex = 1;
+                    loginLink.Text = "Welcome " + u.UserName;
+                    loginLink.NavigateUrl = "~/Profile.aspx";
                 }
                 switch (pageName)
                 {
                     case @"default.aspx":
-                        HomeCon.Attributes.Add("class", "active");
+                        HomeCon.Attributes.Add("class", "selected");
+                        break;
+                    case @"login.aspx":
+                        LoginCon.Attributes.Add("class", "selected");
                         break;
                     case "register.aspx":
                     case "profile.aspx":
-                        RegisterCon.Attributes.Add("class", "active");
+                        RegisterCon.Attributes.Add("class", "selected");
                         break;
                 }
             }

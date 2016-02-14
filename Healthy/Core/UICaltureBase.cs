@@ -20,7 +20,7 @@ namespace Healthy.Core
         }
         protected override void InitializeCulture()
         {
-            Title = "Healthy Care System";
+            Title = "Interactive and Digital Mother Child Health Handbook (idMCHH)";
 
             HttpCookie CultureCookie = Request.Cookies["ASLang"];
 

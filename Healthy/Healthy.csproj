@@ -70,9 +70,66 @@
     <Content Include="App_Data\HealthCare_log.ldf">
       <DependentUpon>HealthCare.mdf</DependentUpon>
     </Content>
-    <Content Include="App_Themes\En\site.css" />
+    <Content Include="App_Themes\En\bootstrap.min.css" />
     <Content Include="ChangePassword.aspx" />
+    <Content Include="css\ie7.css" />
+    <Content Include="css\site.css" />
+    <Content Include="css\style.css" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\award.jpg" />
+    <Content Include="images\award2.jpg" />
+    <Content Include="images\bg-aside.gif" />
+    <Content Include="images\bg-footer.jpg" />
+    <Content Include="images\bg-header.jpg" />
+    <Content Include="images\bg-menu.gif" />
+    <Content Include="images\bg-more.png" />
+    <Content Include="images\bg-navigation.gif" />
+    <Content Include="images\bg-sidebar.gif" />
+    <Content Include="images\biking.jpg" />
+    <Content Include="images\biking2.jpg" />
+    <Content Include="images\border-bottom.gif" />
+    <Content Include="images\border-dotted.gif" />
+    <Content Include="images\border-footer-menu.png" />
+    <Content Include="images\border-top.gif" />
+    <Content Include="images\bruce.jpg" />
+    <Content Include="images\capsule.jpg" />
+    <Content Include="images\capsule2.jpg" />
+    <Content Include="images\couple.jpg" />
+    <Content Include="images\doctors.jpg" />
+    <Content Include="images\dots.gif" />
+    <Content Include="images\dots2.gif" />
+    <Content Include="images\electrocardiograms.jpg" />
+    <Content Include="images\emily.jpg" />
+    <Content Include="images\felia.jpg" />
+    <Content Include="images\florida.jpg" />
+    <Content Include="images\frank.jpg" />
+    <Content Include="images\garry.jpg" />
+    <Content Include="images\ginna.jpg" />
+    <Content Include="images\harrison.jpg" />
+    <Content Include="images\heart-monitoring.jpg" />
+    <Content Include="images\heart-threatment.jpg" />
+    <Content Include="images\heart.jpg" />
+    <Content Include="images\heart2.jpg" />
+    <Content Include="images\icons.png" />
+    <Content Include="images\jack.jpg" />
+    <Content Include="images\jefferson.jpg" />
+    <Content Include="images\kyle.jpg" />
+    <Content Include="images\linda.jpg" />
     <Content Include="images\logo.png" />
+    <Content Include="images\monitoring.jpg" />
+    <Content Include="images\neurogical-problem.jpg" />
+    <Content Include="images\old-couple.jpg" />
+    <Content Include="images\orlando.jpg" />
+    <Content Include="images\rosemary.jpg" />
+    <Content Include="images\shadow.png" />
+    <Content Include="images\stress-testing.jpg" />
+    <Content Include="images\transparent-hover.png" />
+    <Content Include="images\transparent.png" />
+    <Content Include="images\vancouver.jpg" />
+    <Content Include="images\what-can-we-do.jpg" />
+    <Content Include="images\where-you-can-find.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="packages.config" />
@@ -85,7 +142,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\En\bootstrap.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Register.aspx" />
@@ -168,6 +224,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="fonts\" />
     <Folder Include="Scripts\UI\external\" />
     <Folder Include="Scripts\UI\images\" />
   </ItemGroup>
